@@ -1,0 +1,14 @@
+# Saved breakpoints file created on 二  9 10 07:36:42 CST 2013
+
+set $current_radix = $input_radix
+set input-radix 012
+
+break clocks.cpp:78
+
+break clocks.cpp:86
+commands
+        p t
+        p op[seq[i]-1]
+end
+
+set input-radix $current_radix
